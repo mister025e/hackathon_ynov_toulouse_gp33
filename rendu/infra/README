@@ -1,0 +1,241 @@
+# Documentation de Déploiement — Assistant Financier IA (Data-Chef)
+**Auteur :** Martial Quentin — DevOps / Infrastructure Engineer
+**Date :** 01 juillet 2026
+**Version :** 1.0
+
+---
+
+## 1. Résumé exécutif
+
+Ce document décrit l'architecture, les choix techniques justifiés et le pipeline de sécurité mis en place pour le déploiement d'un serveur d'inférence IA hébergeant le modèle **Phi-3.5-Financial** (Phi-3.5-mini-instruct), exposé via une interface conversationnelle Streamlit, le tout intégré à l'infrastructure Docker Swarm / Traefik existante.
+
+---
+
+## 2. Architecture générale
+
+L'ensemble du stack repose sur :
+
+- **Serveur d'inférence** : NVIDIA Triton Inference Server (v2.49.0, build NVIDIA Release 24.08)
+- **Modèle** : phi35_financial (Phi-3.5-mini-instruct)
+- **Frontend** : application Python Streamlit
+- **Orchestration** : Docker Swarm (nœud manager `docker-nodes-1`, Docker Engine 29.1.5)
+- **Reverse proxy / TLS** : Traefik (déjà en place, mode Swarm)
+- **Infrastructure sous-jacente** : Proxmox avec IP publique, pfSense en pare-feu périphérique
+
+```
+Internet → pfSense → Proxmox → Docker Swarm
+                                   ├── Traefik (TLS, routing)
+                                   ├── streamlit-app (frontend)
+                                   └── triton (serveur d'inférence)
+```
+
+---
+
+## 3. Serveur d'inférence Triton
+
+### 3.1 Configuration opérationnelle
+
+| Élément | Détail |
+|---|---|
+| Runtime | NVIDIA Triton Inference Server 2.49.0 |
+| Modèle chargé | phi35_financial (Phi-3.5-mini-instruct) |
+| Port HTTP | 8000 |
+| Port gRPC | 8001 |
+| Port Metrics (Prometheus) | 8002 |
+| Mode de calcul actuel | CPU-only (GPU non détecté) |
+
+Le serveur a été validé fonctionnel : le modèle est chargé avec succès et répond sur les trois ports standards.
+
+### 3.2 Choix techniques justifiés
+
+**Pourquoi Triton plutôt qu'Ollama ou vLLM ?**
+- Protocole d'inférence standardisé KServe v2, interopérable avec l'écosystème MLOps.
+- Métriques Prometheus natives sur le port 8002, directement exploitables par la stack Grafana déjà en place.
+- Meilleure intégration entreprise pour un cas d'usage financier nécessitant traçabilité et observabilité.
+
+**Pourquoi Phi-3.5-mini-instruct plutôt qu'un modèle plus lourd ?**
+- Petit Language Model (SLM) de 3.8 milliards de paramètres avec attention multi-requêtes (MQA).
+- Fenêtre de contexte de 128k tokens, suffisante pour l'analyse de documents financiers volumineux.
+- Fonctionne en mode CPU en phase de test, réduisant la dépendance matérielle initiale, tout en conservant un chemin d'évolution vers le GPU.
+
+**Pourquoi Docker Swarm + Traefik plutôt que Kubernetes pour ce composant ?**
+- Cohérence avec l'infrastructure Swarm déjà opérationnelle (nœud `docker-nodes-1`).
+- Simplicité de routage via labels Traefik, sans complexité additionnelle d'un cluster Kubernetes pour ce périmètre.
+
+### 3.3 Point d'attention : accélération GPU
+
+Le log de démarrage confirme l'absence de driver NVIDIA détecté (`CudaDriverHelper has not been initialized`), signe que le passthrough PCIe GPU n'est pas configuré sur la VM Proxmox.
+
+**Actions à mener avant mise en production :**
+1. Vérifier la présence du GPU physique : `lspci -nnk | grep -i nvidia`
+2. Vérifier la configuration de passthrough : `qm config <VMID> | grep hostpci`
+3. Configurer une entrée `hostpci0` si absente.
+4. Installer le NVIDIA Container Toolkit sur l'hôte du conteneur Triton.
+
+Fonctionnement acceptable en phase de test, mais non recommandé en production pour des raisons de latence.
+
+---
+
+## 4. Frontend Streamlit
+
+### 4.1 Intégration avec Triton
+
+L'API Triton utilise le protocole **KServe v2** (`/v2/models/{model}/infer`) avec des tenseurs typés, différent du format JSON simplifié utilisé par Ollama. L'application Streamlit a été adaptée en conséquence.
+
+Points clés de configuration :
+- Résolution du service Triton via le hostname Docker DNS `triton` (et non `localhost`, qui ne fonctionne pas en inter-conteneurs).
+- Tests de validation recommandés avant tout diagnostic frontend :
+```bash
+curl http://<host>:8000/v2/health/ready
+curl http://<host>:8000/v2/models/phi35_financial/config
+```
+
+### 4.2 Déploiement Docker Compose / Swarm
+
+```yaml
+version: "3.9"
+services:
+  streamlit-app:
+    image: app-py:latest
+    environment:
+      TRITON_URL: "http://triton:8000"
+    networks:
+      - traefik-public
+    deploy:
+      labels:
+        - "traefik.enable=true"
+        - "traefik.http.services.assistant.loadbalancer.server.port=8501"
+networks:
+  traefik-public:
+    external: true
+```
+
+**Points de vigilance en mode Swarm :**
+- Pas de `build: .` en mode Swarm : l'image doit être pré-construite et accessible sur tous les nœuds (registre GitLab recommandé).
+- Ne pas publier le port 8501 sur l'hôte : Traefik route directement via le réseau Docker overlay.
+- Streamlit utilise des WebSockets : s'assurer que Traefik est configuré pour les supporter (pas de configuration additionnelle nécessaire en usage standard HTTP/1.1 upgrade).
+
+---
+
+## 5. Pipeline de sécurité (DevSecOps)
+
+### 5.1 Objectif
+
+Automatiser la détection de vulnérabilités, de secrets exposés et de failles applicatives avant toute mise en production, en s'appuyant sur les outils déjà en usage sur les autres projets (Semgrep, Trivy, Gitleaks) et l'instance GitLab self-hosted.
+
+### 5.2 Architecture du pipeline
+
+```
+build → sast (SAST + secrets + container scan) → deploy-test → dast (ZAP)
+```
+
+### 5.3 Pipeline GitLab CI complet
+
+```yaml
+stages:
+  - build
+  - sast
+  - deploy-test
+  - dast
+
+variables:
+  IMAGE: $CI_REGISTRY_IMAGE/streamlit-assistant:$CI_COMMIT_SHORT_SHA
+  APP_URL: "http://streamlit-assistant-test:8501"
+
+build:
+  stage: build
+  image: docker:26
+  services:
+    - docker:26-dind
+  before_script:
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+  script:
+    - docker build -t $IMAGE .
+    - docker push $IMAGE
+
+include:
+  - template: Security/SAST.gitlab-ci.yml
+  - template: Security/Secret-Detection.gitlab-ci.yml
+  - template: Security/Container-Scanning.gitlab-ci.yml
+
+secret_detection:
+  stage: sast
+  variables:
+    SECRET_DETECTION_HISTORIC_SCAN: "true"
+
+container_scanning:
+  stage: sast
+  variables:
+    CS_IMAGE: $IMAGE
+    CS_SEVERITY_THRESHOLD: HIGH
+
+trivy-fs:
+  stage: sast
+  image: aquasec/trivy:latest
+  script:
+    - trivy fs . --scanners vuln,misconfig,secret --severity MEDIUM,HIGH,CRITICAL --exit-code 0 --format table
+    - trivy fs . --scanners vuln,misconfig,secret --severity CRITICAL --exit-code 1 --format table
+  allow_failure: true
+
+deploy-test:
+  stage: deploy-test
+  image: docker:26
+  script:
+    - docker run -d --rm --name streamlit-assistant-test -p 8501:8501 $IMAGE
+    - sleep 10
+    - curl -f http://localhost:8501/_stcore/health || exit 1
+  environment:
+    name: test
+    url: $APP_URL
+
+dast:zap:
+  stage: dast
+  image: ghcr.io/zaproxy/zaproxy:stable
+  script:
+    - mkdir -p /zap/wrk
+    - zap-baseline.py -t $APP_URL -r zap-report.html -J zap-report.json -I
+  artifacts:
+    paths:
+      - zap-report.html
+      - zap-report.json
+    expire_in: 30 days
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+```
+
+### 5.4 Justifications techniques
+
+| Choix | Justification |
+|---|---|
+| Secret Detection en scan historique complet | Un secret réel a déjà été détecté dans `.env` sur un précédent audit ; le scan de l'historique Git complet est indispensable pour ce type de projet |
+| Trivy en mode non-bloquant sur MEDIUM/HIGH | Éviter les faux positifs issus de dépendances transitives (ex. Starlette via FastAPI), déjà rencontrés en production |
+| Container scanning sur l'image poussée | Le déploiement final utilise une image pré-construite (contrainte Swarm), le scan doit donc porter sur l'artefact réel déployé, pas sur un build local |
+| ZAP en job classique plutôt que `dast_configuration` natif | `dast_configuration` est réservé à GitLab Ultimate ; l'instance self-hosted utilise GitLab Free/Premium |
+| Health check avant DAST | Garantir que le conteneur Streamlit est prêt avant de lancer le scan actif, évitant les faux négatifs |
+
+### 5.5 Compléments recommandés (roadmap sécurité)
+
+1. **Smoke-test anti prompt injection** : job dédié envoyant des payloads malveillants à l'endpoint `/v2/models/phi35_financial/infer` avant toute mise en production.
+2. **Audit du port Metrics Triton (8002)** : vérifier qu'il n'est pas exposé publiquement (métadonnées sensibles), le restreindre au réseau interne Docker uniquement.
+3. **Rotation automatique des secrets** : intégration OpenBao/Vault avec authentification OIDC/JWT GitLab CI, TTL court sur les credentials dynamiques (1h) et TTL max 90 jours pour les clés statiques.
+4. **Scan Execution Policies** (si upgrade GitLab Ultimate) : forcer les scans de sécurité sur tous les projets du groupe.
+5. **Pre-commit hooks Gitleaks** côté développeur pour intercepter les secrets avant tout push.
+
+---
+
+## 6. Synthèse des risques et statut
+
+| Risque | Statut | Action requise |
+|---|---|---|
+| Inférence en CPU uniquement | Ouvert | Configurer GPU passthrough Proxmox + NVIDIA Container Toolkit |
+| Port Metrics 8002 potentiellement exposé | À vérifier | Restreindre au réseau interne |
+| Absence de test anti prompt injection | Ouvert | Ajouter job de smoke-test dédié |
+| Image buildée localement uniquement | À corriger | Pousser vers GitLab Container Registry |
+| Secrets statiques dans `.env` | Résolu précédemment | Maintenir la vigilance via secret detection historique |
+
+---
+
+## 7. Conclusion opérationnelle
+
+Le serveur d'inférence Phi-3.5-Financial est fonctionnel et accessible via Triton, le frontend Streamlit est intégré derrière Traefik en mode Swarm, et un pipeline de sécurité DevSecOps complet (SAST, secrets, container scan, DAST) est prêt à être exécuté. La mise en production nécessite néanmoins la finalisation du GPU passthrough et l'ajout des contrôles de sécurité spécifiques aux modèles d'IA (prompt injection, exposition des métadonnées).
