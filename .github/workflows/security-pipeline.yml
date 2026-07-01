@@ -47,11 +47,19 @@ jobs:
 
   sast:
     runs-on: ubuntu-latest
+    container:
+      image: semgrep/semgrep
     steps:
       - uses: actions/checkout@v4
-      - uses: returntocorp/semgrep-action@v1
+
+      - name: Run Semgrep and generate SARIF
+        run: semgrep scan --config=p/default --sarif --output=semgrep-results.sarif
+        continue-on-error: true
+
+      - name: Upload SARIF to GitHub Security
+        uses: github/codeql-action/upload-sarif@v3
         with:
-          config: p/default
+          sarif_file: semgrep-results.sarif
 
   secret-detection:
     runs-on: ubuntu-latest
@@ -59,9 +67,12 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          submodules: recursive
       - uses: gitleaks/gitleaks-action@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITLEAKS_ENABLE_UPLOAD_ARTIFACT: true
+          GITLEAKS_ENABLE_SUMMARY: true
 
   dependency-scanning:
     runs-on: ubuntu-latest
