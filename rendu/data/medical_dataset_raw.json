@@ -1,0 +1,802 @@
+[
+  {
+    "Patient": "I have a persistent headache and fever for 3 days.",
+    "Doctor": "A persistent headache with fever lasting more than 2 days may suggest an infection such as influenza, sinusitis, or in rare cases meningitis. Please seek medical attention promptly, especially if you also have neck stiffness or sensitivity to light."
+  },
+  {
+    "Patient": "What are the symptoms of type 2 diabetes?",
+    "Doctor": "Common symptoms of type 2 diabetes include increased thirst, frequent urination, unexplained fatigue, blurred vision, slow-healing wounds, and tingling in hands or feet. Many people have no symptoms early on. A fasting blood glucose test is needed for diagnosis."
+  },
+  {
+    "Patient": "How do I treat a mild burn at home?",
+    "Doctor": "For a mild (first-degree) burn: cool the area under running cold water for 10-20 minutes. Do not use ice. Apply aloe vera gel or a soothing lotion. Cover with a sterile non-stick bandage. Seek medical attention if the burn covers a large area or involves the face, hands, or joints."
+  },
+  {
+    "Patient": "My child has diarrhea and is not eating.",
+    "Doctor": "Diarrhea in children requires careful hydration management. Use an oral rehydration solution (ORS). Offer small, frequent amounts of liquid. Gradually reintroduce bland foods like rice, bananas, and toast. Consult a doctor if diarrhea persists beyond 48 hours, if there is blood in the stool, or signs of dehydration appear."
+  },
+  {
+    "Patient": "What is hypertension and how is it managed?",
+    "Doctor": "Hypertension (high blood pressure) is a chronic condition where blood pressure consistently exceeds 130/80 mmHg. Management includes lifestyle changes (reduced salt intake, regular exercise, healthy diet, smoking cessation) and medication when needed (e.g., ACE inhibitors, calcium channel blockers). Regular monitoring is essential."
+  },
+  {
+    "Patient": "I feel chest pain when I exercise.",
+    "Doctor": "Exercise-induced chest pain can indicate several conditions, ranging from musculoskeletal issues to more serious cardiac causes such as angina. This symptom should never be ignored. Please consult a cardiologist for an ECG and stress test. Stop exercising if pain occurs and seek emergency care if pain is severe or radiates to the arm or jaw."
+  },
+  {
+    "Patient": "What is the difference between a cold and the flu?",
+    "Doctor": "Colds typically develop gradually with mild symptoms: runny nose, sore throat, and sneezing. The flu comes on suddenly with more severe symptoms: high fever (38-40°C), body aches, fatigue, and headache. Both are caused by viruses. Flu can lead to serious complications in vulnerable populations; annual vaccination is recommended."
+  },
+  {
+    "Patient": "How can I improve my sleep quality?",
+    "Doctor": "To improve sleep quality: maintain a consistent sleep schedule, keep your bedroom dark and cool (18-20°C), avoid screens 1 hour before bed, limit caffeine after 2 PM, avoid alcohol before sleep, and manage stress through relaxation techniques. If sleep problems persist beyond 3 weeks, consult a doctor to rule out sleep disorders."
+  },
+  {
+    "Patient": "What are signs of an allergic reaction?",
+    "Doctor": "Mild allergic reactions include hives, itching, runny nose, and watery eyes. Moderate reactions may include swelling, stomach cramps, or vomiting. A severe reaction (anaphylaxis) causes throat swelling, difficulty breathing, rapid heartbeat, and can be life-threatening. Anaphylaxis requires immediate emergency treatment with epinephrine."
+  },
+  {
+    "Patient": "How often should I get a blood test?",
+    "Doctor": "For healthy adults, a general blood panel (CBC, metabolic panel, lipid profile) is recommended every 1-2 years. Frequency increases with age or chronic conditions. Fasting blood glucose should be checked every 3 years after age 45. Consult your doctor for a personalized screening schedule based on your medical history and risk factors."
+  },
+  {
+    "Patient": "I have a persistent headache and fever for 3 days.",
+    "Doctor": "A persistent headache with fever lasting more than 2 days may suggest an infection such as influenza, sinusitis, or in rare cases meningitis. Please seek medical attention promptly, especially if you also have neck stiffness or sensitivity to light."
+  },
+  {
+    "Patient": "What are the symptoms of type 2 diabetes?",
+    "Doctor": "Common symptoms of type 2 diabetes include increased thirst, frequent urination, unexplained fatigue, blurred vision, slow-healing wounds, and tingling in hands or feet. Many people have no symptoms early on. A fasting blood glucose test is needed for diagnosis."
+  },
+  {
+    "Patient": "How do I treat a mild burn at home?",
+    "Doctor": "For a mild (first-degree) burn: cool the area under running cold water for 10-20 minutes. Do not use ice. Apply aloe vera gel or a soothing lotion. Cover with a sterile non-stick bandage. Seek medical attention if the burn covers a large area or involves the face, hands, or joints."
+  },
+  {
+    "Patient": "My child has diarrhea and is not eating.",
+    "Doctor": "Diarrhea in children requires careful hydration management. Use an oral rehydration solution (ORS). Offer small, frequent amounts of liquid. Gradually reintroduce bland foods like rice, bananas, and toast. Consult a doctor if diarrhea persists beyond 48 hours, if there is blood in the stool, or signs of dehydration appear."
+  },
+  {
+    "Patient": "What is hypertension and how is it managed?",
+    "Doctor": "Hypertension (high blood pressure) is a chronic condition where blood pressure consistently exceeds 130/80 mmHg. Management includes lifestyle changes (reduced salt intake, regular exercise, healthy diet, smoking cessation) and medication when needed (e.g., ACE inhibitors, calcium channel blockers). Regular monitoring is essential."
+  },
+  {
+    "Patient": "I feel chest pain when I exercise.",
+    "Doctor": "Exercise-induced chest pain can indicate several conditions, ranging from musculoskeletal issues to more serious cardiac causes such as angina. This symptom should never be ignored. Please consult a cardiologist for an ECG and stress test. Stop exercising if pain occurs and seek emergency care if pain is severe or radiates to the arm or jaw."
+  },
+  {
+    "Patient": "What is the difference between a cold and the flu?",
+    "Doctor": "Colds typically develop gradually with mild symptoms: runny nose, sore throat, and sneezing. The flu comes on suddenly with more severe symptoms: high fever (38-40°C), body aches, fatigue, and headache. Both are caused by viruses. Flu can lead to serious complications in vulnerable populations; annual vaccination is recommended."
+  },
+  {
+    "Patient": "How can I improve my sleep quality?",
+    "Doctor": "To improve sleep quality: maintain a consistent sleep schedule, keep your bedroom dark and cool (18-20°C), avoid screens 1 hour before bed, limit caffeine after 2 PM, avoid alcohol before sleep, and manage stress through relaxation techniques. If sleep problems persist beyond 3 weeks, consult a doctor to rule out sleep disorders."
+  },
+  {
+    "Patient": "What are signs of an allergic reaction?",
+    "Doctor": "Mild allergic reactions include hives, itching, runny nose, and watery eyes. Moderate reactions may include swelling, stomach cramps, or vomiting. A severe reaction (anaphylaxis) causes throat swelling, difficulty breathing, rapid heartbeat, and can be life-threatening. Anaphylaxis requires immediate emergency treatment with epinephrine."
+  },
+  {
+    "Patient": "How often should I get a blood test?",
+    "Doctor": "For healthy adults, a general blood panel (CBC, metabolic panel, lipid profile) is recommended every 1-2 years. Frequency increases with age or chronic conditions. Fasting blood glucose should be checked every 3 years after age 45. Consult your doctor for a personalized screening schedule based on your medical history and risk factors."
+  },
+  {
+    "Patient": "I have a persistent headache and fever for 3 days.",
+    "Doctor": "A persistent headache with fever lasting more than 2 days may suggest an infection such as influenza, sinusitis, or in rare cases meningitis. Please seek medical attention promptly, especially if you also have neck stiffness or sensitivity to light."
+  },
+  {
+    "Patient": "What are the symptoms of type 2 diabetes?",
+    "Doctor": "Common symptoms of type 2 diabetes include increased thirst, frequent urination, unexplained fatigue, blurred vision, slow-healing wounds, and tingling in hands or feet. Many people have no symptoms early on. A fasting blood glucose test is needed for diagnosis."
+  },
+  {
+    "Patient": "How do I treat a mild burn at home?",
+    "Doctor": "For a mild (first-degree) burn: cool the area under running cold water for 10-20 minutes. Do not use ice. Apply aloe vera gel or a soothing lotion. Cover with a sterile non-stick bandage. Seek medical attention if the burn covers a large area or involves the face, hands, or joints."
+  },
+  {
+    "Patient": "My child has diarrhea and is not eating.",
+    "Doctor": "Diarrhea in children requires careful hydration management. Use an oral rehydration solution (ORS). Offer small, frequent amounts of liquid. Gradually reintroduce bland foods like rice, bananas, and toast. Consult a doctor if diarrhea persists beyond 48 hours, if there is blood in the stool, or signs of dehydration appear."
+  },
+  {
+    "Patient": "What is hypertension and how is it managed?",
+    "Doctor": "Hypertension (high blood pressure) is a chronic condition where blood pressure consistently exceeds 130/80 mmHg. Management includes lifestyle changes (reduced salt intake, regular exercise, healthy diet, smoking cessation) and medication when needed (e.g., ACE inhibitors, calcium channel blockers). Regular monitoring is essential."
+  },
+  {
+    "Patient": "I feel chest pain when I exercise.",
+    "Doctor": "Exercise-induced chest pain can indicate several conditions, ranging from musculoskeletal issues to more serious cardiac causes such as angina. This symptom should never be ignored. Please consult a cardiologist for an ECG and stress test. Stop exercising if pain occurs and seek emergency care if pain is severe or radiates to the arm or jaw."
+  },
+  {
+    "Patient": "What is the difference between a cold and the flu?",
+    "Doctor": "Colds typically develop gradually with mild symptoms: runny nose, sore throat, and sneezing. The flu comes on suddenly with more severe symptoms: high fever (38-40°C), body aches, fatigue, and headache. Both are caused by viruses. Flu can lead to serious complications in vulnerable populations; annual vaccination is recommended."
+  },
+  {
+    "Patient": "How can I improve my sleep quality?",
+    "Doctor": "To improve sleep quality: maintain a consistent sleep schedule, keep your bedroom dark and cool (18-20°C), avoid screens 1 hour before bed, limit caffeine after 2 PM, avoid alcohol before sleep, and manage stress through relaxation techniques. If sleep problems persist beyond 3 weeks, consult a doctor to rule out sleep disorders."
+  },
+  {
+    "Patient": "What are signs of an allergic reaction?",
+    "Doctor": "Mild allergic reactions include hives, itching, runny nose, and watery eyes. Moderate reactions may include swelling, stomach cramps, or vomiting. A severe reaction (anaphylaxis) causes throat swelling, difficulty breathing, rapid heartbeat, and can be life-threatening. Anaphylaxis requires immediate emergency treatment with epinephrine."
+  },
+  {
+    "Patient": "How often should I get a blood test?",
+    "Doctor": "For healthy adults, a general blood panel (CBC, metabolic panel, lipid profile) is recommended every 1-2 years. Frequency increases with age or chronic conditions. Fasting blood glucose should be checked every 3 years after age 45. Consult your doctor for a personalized screening schedule based on your medical history and risk factors."
+  },
+  {
+    "Patient": "I have a persistent headache and fever for 3 days.",
+    "Doctor": "A persistent headache with fever lasting more than 2 days may suggest an infection such as influenza, sinusitis, or in rare cases meningitis. Please seek medical attention promptly, especially if you also have neck stiffness or sensitivity to light."
+  },
+  {
+    "Patient": "What are the symptoms of type 2 diabetes?",
+    "Doctor": "Common symptoms of type 2 diabetes include increased thirst, frequent urination, unexplained fatigue, blurred vision, slow-healing wounds, and tingling in hands or feet. Many people have no symptoms early on. A fasting blood glucose test is needed for diagnosis."
+  },
+  {
+    "Patient": "How do I treat a mild burn at home?",
+    "Doctor": "For a mild (first-degree) burn: cool the area under running cold water for 10-20 minutes. Do not use ice. Apply aloe vera gel or a soothing lotion. Cover with a sterile non-stick bandage. Seek medical attention if the burn covers a large area or involves the face, hands, or joints."
+  },
+  {
+    "Patient": "My child has diarrhea and is not eating.",
+    "Doctor": "Diarrhea in children requires careful hydration management. Use an oral rehydration solution (ORS). Offer small, frequent amounts of liquid. Gradually reintroduce bland foods like rice, bananas, and toast. Consult a doctor if diarrhea persists beyond 48 hours, if there is blood in the stool, or signs of dehydration appear."
+  },
+  {
+    "Patient": "What is hypertension and how is it managed?",
+    "Doctor": "Hypertension (high blood pressure) is a chronic condition where blood pressure consistently exceeds 130/80 mmHg. Management includes lifestyle changes (reduced salt intake, regular exercise, healthy diet, smoking cessation) and medication when needed (e.g., ACE inhibitors, calcium channel blockers). Regular monitoring is essential."
+  },
+  {
+    "Patient": "I feel chest pain when I exercise.",
+    "Doctor": "Exercise-induced chest pain can indicate several conditions, ranging from musculoskeletal issues to more serious cardiac causes such as angina. This symptom should never be ignored. Please consult a cardiologist for an ECG and stress test. Stop exercising if pain occurs and seek emergency care if pain is severe or radiates to the arm or jaw."
+  },
+  {
+    "Patient": "What is the difference between a cold and the flu?",
+    "Doctor": "Colds typically develop gradually with mild symptoms: runny nose, sore throat, and sneezing. The flu comes on suddenly with more severe symptoms: high fever (38-40°C), body aches, fatigue, and headache. Both are caused by viruses. Flu can lead to serious complications in vulnerable populations; annual vaccination is recommended."
+  },
+  {
+    "Patient": "How can I improve my sleep quality?",
+    "Doctor": "To improve sleep quality: maintain a consistent sleep schedule, keep your bedroom dark and cool (18-20°C), avoid screens 1 hour before bed, limit caffeine after 2 PM, avoid alcohol before sleep, and manage stress through relaxation techniques. If sleep problems persist beyond 3 weeks, consult a doctor to rule out sleep disorders."
+  },
+  {
+    "Patient": "What are signs of an allergic reaction?",
+    "Doctor": "Mild allergic reactions include hives, itching, runny nose, and watery eyes. Moderate reactions may include swelling, stomach cramps, or vomiting. A severe reaction (anaphylaxis) causes throat swelling, difficulty breathing, rapid heartbeat, and can be life-threatening. Anaphylaxis requires immediate emergency treatment with epinephrine."
+  },
+  {
+    "Patient": "How often should I get a blood test?",
+    "Doctor": "For healthy adults, a general blood panel (CBC, metabolic panel, lipid profile) is recommended every 1-2 years. Frequency increases with age or chronic conditions. Fasting blood glucose should be checked every 3 years after age 45. Consult your doctor for a personalized screening schedule based on your medical history and risk factors."
+  },
+  {
+    "Patient": "I have a persistent headache and fever for 3 days.",
+    "Doctor": "A persistent headache with fever lasting more than 2 days may suggest an infection such as influenza, sinusitis, or in rare cases meningitis. Please seek medical attention promptly, especially if you also have neck stiffness or sensitivity to light."
+  },
+  {
+    "Patient": "What are the symptoms of type 2 diabetes?",
+    "Doctor": "Common symptoms of type 2 diabetes include increased thirst, frequent urination, unexplained fatigue, blurred vision, slow-healing wounds, and tingling in hands or feet. Many people have no symptoms early on. A fasting blood glucose test is needed for diagnosis."
+  },
+  {
+    "Patient": "How do I treat a mild burn at home?",
+    "Doctor": "For a mild (first-degree) burn: cool the area under running cold water for 10-20 minutes. Do not use ice. Apply aloe vera gel or a soothing lotion. Cover with a sterile non-stick bandage. Seek medical attention if the burn covers a large area or involves the face, hands, or joints."
+  },
+  {
+    "Patient": "My child has diarrhea and is not eating.",
+    "Doctor": "Diarrhea in children requires careful hydration management. Use an oral rehydration solution (ORS). Offer small, frequent amounts of liquid. Gradually reintroduce bland foods like rice, bananas, and toast. Consult a doctor if diarrhea persists beyond 48 hours, if there is blood in the stool, or signs of dehydration appear."
+  },
+  {
+    "Patient": "What is hypertension and how is it managed?",
+    "Doctor": "Hypertension (high blood pressure) is a chronic condition where blood pressure consistently exceeds 130/80 mmHg. Management includes lifestyle changes (reduced salt intake, regular exercise, healthy diet, smoking cessation) and medication when needed (e.g., ACE inhibitors, calcium channel blockers). Regular monitoring is essential."
+  },
+  {
+    "Patient": "I feel chest pain when I exercise.",
+    "Doctor": "Exercise-induced chest pain can indicate several conditions, ranging from musculoskeletal issues to more serious cardiac causes such as angina. This symptom should never be ignored. Please consult a cardiologist for an ECG and stress test. Stop exercising if pain occurs and seek emergency care if pain is severe or radiates to the arm or jaw."
+  },
+  {
+    "Patient": "What is the difference between a cold and the flu?",
+    "Doctor": "Colds typically develop gradually with mild symptoms: runny nose, sore throat, and sneezing. The flu comes on suddenly with more severe symptoms: high fever (38-40°C), body aches, fatigue, and headache. Both are caused by viruses. Flu can lead to serious complications in vulnerable populations; annual vaccination is recommended."
+  },
+  {
+    "Patient": "How can I improve my sleep quality?",
+    "Doctor": "To improve sleep quality: maintain a consistent sleep schedule, keep your bedroom dark and cool (18-20°C), avoid screens 1 hour before bed, limit caffeine after 2 PM, avoid alcohol before sleep, and manage stress through relaxation techniques. If sleep problems persist beyond 3 weeks, consult a doctor to rule out sleep disorders."
+  },
+  {
+    "Patient": "What are signs of an allergic reaction?",
+    "Doctor": "Mild allergic reactions include hives, itching, runny nose, and watery eyes. Moderate reactions may include swelling, stomach cramps, or vomiting. A severe reaction (anaphylaxis) causes throat swelling, difficulty breathing, rapid heartbeat, and can be life-threatening. Anaphylaxis requires immediate emergency treatment with epinephrine."
+  },
+  {
+    "Patient": "How often should I get a blood test?",
+    "Doctor": "For healthy adults, a general blood panel (CBC, metabolic panel, lipid profile) is recommended every 1-2 years. Frequency increases with age or chronic conditions. Fasting blood glucose should be checked every 3 years after age 45. Consult your doctor for a personalized screening schedule based on your medical history and risk factors."
+  },
+  {
+    "Patient": "I have a persistent headache and fever for 3 days.",
+    "Doctor": "A persistent headache with fever lasting more than 2 days may suggest an infection such as influenza, sinusitis, or in rare cases meningitis. Please seek medical attention promptly, especially if you also have neck stiffness or sensitivity to light."
+  },
+  {
+    "Patient": "What are the symptoms of type 2 diabetes?",
+    "Doctor": "Common symptoms of type 2 diabetes include increased thirst, frequent urination, unexplained fatigue, blurred vision, slow-healing wounds, and tingling in hands or feet. Many people have no symptoms early on. A fasting blood glucose test is needed for diagnosis."
+  },
+  {
+    "Patient": "How do I treat a mild burn at home?",
+    "Doctor": "For a mild (first-degree) burn: cool the area under running cold water for 10-20 minutes. Do not use ice. Apply aloe vera gel or a soothing lotion. Cover with a sterile non-stick bandage. Seek medical attention if the burn covers a large area or involves the face, hands, or joints."
+  },
+  {
+    "Patient": "My child has diarrhea and is not eating.",
+    "Doctor": "Diarrhea in children requires careful hydration management. Use an oral rehydration solution (ORS). Offer small, frequent amounts of liquid. Gradually reintroduce bland foods like rice, bananas, and toast. Consult a doctor if diarrhea persists beyond 48 hours, if there is blood in the stool, or signs of dehydration appear."
+  },
+  {
+    "Patient": "What is hypertension and how is it managed?",
+    "Doctor": "Hypertension (high blood pressure) is a chronic condition where blood pressure consistently exceeds 130/80 mmHg. Management includes lifestyle changes (reduced salt intake, regular exercise, healthy diet, smoking cessation) and medication when needed (e.g., ACE inhibitors, calcium channel blockers). Regular monitoring is essential."
+  },
+  {
+    "Patient": "I feel chest pain when I exercise.",
+    "Doctor": "Exercise-induced chest pain can indicate several conditions, ranging from musculoskeletal issues to more serious cardiac causes such as angina. This symptom should never be ignored. Please consult a cardiologist for an ECG and stress test. Stop exercising if pain occurs and seek emergency care if pain is severe or radiates to the arm or jaw."
+  },
+  {
+    "Patient": "What is the difference between a cold and the flu?",
+    "Doctor": "Colds typically develop gradually with mild symptoms: runny nose, sore throat, and sneezing. The flu comes on suddenly with more severe symptoms: high fever (38-40°C), body aches, fatigue, and headache. Both are caused by viruses. Flu can lead to serious complications in vulnerable populations; annual vaccination is recommended."
+  },
+  {
+    "Patient": "How can I improve my sleep quality?",
+    "Doctor": "To improve sleep quality: maintain a consistent sleep schedule, keep your bedroom dark and cool (18-20°C), avoid screens 1 hour before bed, limit caffeine after 2 PM, avoid alcohol before sleep, and manage stress through relaxation techniques. If sleep problems persist beyond 3 weeks, consult a doctor to rule out sleep disorders."
+  },
+  {
+    "Patient": "What are signs of an allergic reaction?",
+    "Doctor": "Mild allergic reactions include hives, itching, runny nose, and watery eyes. Moderate reactions may include swelling, stomach cramps, or vomiting. A severe reaction (anaphylaxis) causes throat swelling, difficulty breathing, rapid heartbeat, and can be life-threatening. Anaphylaxis requires immediate emergency treatment with epinephrine."
+  },
+  {
+    "Patient": "How often should I get a blood test?",
+    "Doctor": "For healthy adults, a general blood panel (CBC, metabolic panel, lipid profile) is recommended every 1-2 years. Frequency increases with age or chronic conditions. Fasting blood glucose should be checked every 3 years after age 45. Consult your doctor for a personalized screening schedule based on your medical history and risk factors."
+  },
+  {
+    "Patient": "I have a persistent headache and fever for 3 days.",
+    "Doctor": "A persistent headache with fever lasting more than 2 days may suggest an infection such as influenza, sinusitis, or in rare cases meningitis. Please seek medical attention promptly, especially if you also have neck stiffness or sensitivity to light."
+  },
+  {
+    "Patient": "What are the symptoms of type 2 diabetes?",
+    "Doctor": "Common symptoms of type 2 diabetes include increased thirst, frequent urination, unexplained fatigue, blurred vision, slow-healing wounds, and tingling in hands or feet. Many people have no symptoms early on. A fasting blood glucose test is needed for diagnosis."
+  },
+  {
+    "Patient": "How do I treat a mild burn at home?",
+    "Doctor": "For a mild (first-degree) burn: cool the area under running cold water for 10-20 minutes. Do not use ice. Apply aloe vera gel or a soothing lotion. Cover with a sterile non-stick bandage. Seek medical attention if the burn covers a large area or involves the face, hands, or joints."
+  },
+  {
+    "Patient": "My child has diarrhea and is not eating.",
+    "Doctor": "Diarrhea in children requires careful hydration management. Use an oral rehydration solution (ORS). Offer small, frequent amounts of liquid. Gradually reintroduce bland foods like rice, bananas, and toast. Consult a doctor if diarrhea persists beyond 48 hours, if there is blood in the stool, or signs of dehydration appear."
+  },
+  {
+    "Patient": "What is hypertension and how is it managed?",
+    "Doctor": "Hypertension (high blood pressure) is a chronic condition where blood pressure consistently exceeds 130/80 mmHg. Management includes lifestyle changes (reduced salt intake, regular exercise, healthy diet, smoking cessation) and medication when needed (e.g., ACE inhibitors, calcium channel blockers). Regular monitoring is essential."
+  },
+  {
+    "Patient": "I feel chest pain when I exercise.",
+    "Doctor": "Exercise-induced chest pain can indicate several conditions, ranging from musculoskeletal issues to more serious cardiac causes such as angina. This symptom should never be ignored. Please consult a cardiologist for an ECG and stress test. Stop exercising if pain occurs and seek emergency care if pain is severe or radiates to the arm or jaw."
+  },
+  {
+    "Patient": "What is the difference between a cold and the flu?",
+    "Doctor": "Colds typically develop gradually with mild symptoms: runny nose, sore throat, and sneezing. The flu comes on suddenly with more severe symptoms: high fever (38-40°C), body aches, fatigue, and headache. Both are caused by viruses. Flu can lead to serious complications in vulnerable populations; annual vaccination is recommended."
+  },
+  {
+    "Patient": "How can I improve my sleep quality?",
+    "Doctor": "To improve sleep quality: maintain a consistent sleep schedule, keep your bedroom dark and cool (18-20°C), avoid screens 1 hour before bed, limit caffeine after 2 PM, avoid alcohol before sleep, and manage stress through relaxation techniques. If sleep problems persist beyond 3 weeks, consult a doctor to rule out sleep disorders."
+  },
+  {
+    "Patient": "What are signs of an allergic reaction?",
+    "Doctor": "Mild allergic reactions include hives, itching, runny nose, and watery eyes. Moderate reactions may include swelling, stomach cramps, or vomiting. A severe reaction (anaphylaxis) causes throat swelling, difficulty breathing, rapid heartbeat, and can be life-threatening. Anaphylaxis requires immediate emergency treatment with epinephrine."
+  },
+  {
+    "Patient": "How often should I get a blood test?",
+    "Doctor": "For healthy adults, a general blood panel (CBC, metabolic panel, lipid profile) is recommended every 1-2 years. Frequency increases with age or chronic conditions. Fasting blood glucose should be checked every 3 years after age 45. Consult your doctor for a personalized screening schedule based on your medical history and risk factors."
+  },
+  {
+    "Patient": "I have a persistent headache and fever for 3 days.",
+    "Doctor": "A persistent headache with fever lasting more than 2 days may suggest an infection such as influenza, sinusitis, or in rare cases meningitis. Please seek medical attention promptly, especially if you also have neck stiffness or sensitivity to light."
+  },
+  {
+    "Patient": "What are the symptoms of type 2 diabetes?",
+    "Doctor": "Common symptoms of type 2 diabetes include increased thirst, frequent urination, unexplained fatigue, blurred vision, slow-healing wounds, and tingling in hands or feet. Many people have no symptoms early on. A fasting blood glucose test is needed for diagnosis."
+  },
+  {
+    "Patient": "How do I treat a mild burn at home?",
+    "Doctor": "For a mild (first-degree) burn: cool the area under running cold water for 10-20 minutes. Do not use ice. Apply aloe vera gel or a soothing lotion. Cover with a sterile non-stick bandage. Seek medical attention if the burn covers a large area or involves the face, hands, or joints."
+  },
+  {
+    "Patient": "My child has diarrhea and is not eating.",
+    "Doctor": "Diarrhea in children requires careful hydration management. Use an oral rehydration solution (ORS). Offer small, frequent amounts of liquid. Gradually reintroduce bland foods like rice, bananas, and toast. Consult a doctor if diarrhea persists beyond 48 hours, if there is blood in the stool, or signs of dehydration appear."
+  },
+  {
+    "Patient": "What is hypertension and how is it managed?",
+    "Doctor": "Hypertension (high blood pressure) is a chronic condition where blood pressure consistently exceeds 130/80 mmHg. Management includes lifestyle changes (reduced salt intake, regular exercise, healthy diet, smoking cessation) and medication when needed (e.g., ACE inhibitors, calcium channel blockers). Regular monitoring is essential."
+  },
+  {
+    "Patient": "I feel chest pain when I exercise.",
+    "Doctor": "Exercise-induced chest pain can indicate several conditions, ranging from musculoskeletal issues to more serious cardiac causes such as angina. This symptom should never be ignored. Please consult a cardiologist for an ECG and stress test. Stop exercising if pain occurs and seek emergency care if pain is severe or radiates to the arm or jaw."
+  },
+  {
+    "Patient": "What is the difference between a cold and the flu?",
+    "Doctor": "Colds typically develop gradually with mild symptoms: runny nose, sore throat, and sneezing. The flu comes on suddenly with more severe symptoms: high fever (38-40°C), body aches, fatigue, and headache. Both are caused by viruses. Flu can lead to serious complications in vulnerable populations; annual vaccination is recommended."
+  },
+  {
+    "Patient": "How can I improve my sleep quality?",
+    "Doctor": "To improve sleep quality: maintain a consistent sleep schedule, keep your bedroom dark and cool (18-20°C), avoid screens 1 hour before bed, limit caffeine after 2 PM, avoid alcohol before sleep, and manage stress through relaxation techniques. If sleep problems persist beyond 3 weeks, consult a doctor to rule out sleep disorders."
+  },
+  {
+    "Patient": "What are signs of an allergic reaction?",
+    "Doctor": "Mild allergic reactions include hives, itching, runny nose, and watery eyes. Moderate reactions may include swelling, stomach cramps, or vomiting. A severe reaction (anaphylaxis) causes throat swelling, difficulty breathing, rapid heartbeat, and can be life-threatening. Anaphylaxis requires immediate emergency treatment with epinephrine."
+  },
+  {
+    "Patient": "How often should I get a blood test?",
+    "Doctor": "For healthy adults, a general blood panel (CBC, metabolic panel, lipid profile) is recommended every 1-2 years. Frequency increases with age or chronic conditions. Fasting blood glucose should be checked every 3 years after age 45. Consult your doctor for a personalized screening schedule based on your medical history and risk factors."
+  },
+  {
+    "Patient": "I have a persistent headache and fever for 3 days.",
+    "Doctor": "A persistent headache with fever lasting more than 2 days may suggest an infection such as influenza, sinusitis, or in rare cases meningitis. Please seek medical attention promptly, especially if you also have neck stiffness or sensitivity to light."
+  },
+  {
+    "Patient": "What are the symptoms of type 2 diabetes?",
+    "Doctor": "Common symptoms of type 2 diabetes include increased thirst, frequent urination, unexplained fatigue, blurred vision, slow-healing wounds, and tingling in hands or feet. Many people have no symptoms early on. A fasting blood glucose test is needed for diagnosis."
+  },
+  {
+    "Patient": "How do I treat a mild burn at home?",
+    "Doctor": "For a mild (first-degree) burn: cool the area under running cold water for 10-20 minutes. Do not use ice. Apply aloe vera gel or a soothing lotion. Cover with a sterile non-stick bandage. Seek medical attention if the burn covers a large area or involves the face, hands, or joints."
+  },
+  {
+    "Patient": "My child has diarrhea and is not eating.",
+    "Doctor": "Diarrhea in children requires careful hydration management. Use an oral rehydration solution (ORS). Offer small, frequent amounts of liquid. Gradually reintroduce bland foods like rice, bananas, and toast. Consult a doctor if diarrhea persists beyond 48 hours, if there is blood in the stool, or signs of dehydration appear."
+  },
+  {
+    "Patient": "What is hypertension and how is it managed?",
+    "Doctor": "Hypertension (high blood pressure) is a chronic condition where blood pressure consistently exceeds 130/80 mmHg. Management includes lifestyle changes (reduced salt intake, regular exercise, healthy diet, smoking cessation) and medication when needed (e.g., ACE inhibitors, calcium channel blockers). Regular monitoring is essential."
+  },
+  {
+    "Patient": "I feel chest pain when I exercise.",
+    "Doctor": "Exercise-induced chest pain can indicate several conditions, ranging from musculoskeletal issues to more serious cardiac causes such as angina. This symptom should never be ignored. Please consult a cardiologist for an ECG and stress test. Stop exercising if pain occurs and seek emergency care if pain is severe or radiates to the arm or jaw."
+  },
+  {
+    "Patient": "What is the difference between a cold and the flu?",
+    "Doctor": "Colds typically develop gradually with mild symptoms: runny nose, sore throat, and sneezing. The flu comes on suddenly with more severe symptoms: high fever (38-40°C), body aches, fatigue, and headache. Both are caused by viruses. Flu can lead to serious complications in vulnerable populations; annual vaccination is recommended."
+  },
+  {
+    "Patient": "How can I improve my sleep quality?",
+    "Doctor": "To improve sleep quality: maintain a consistent sleep schedule, keep your bedroom dark and cool (18-20°C), avoid screens 1 hour before bed, limit caffeine after 2 PM, avoid alcohol before sleep, and manage stress through relaxation techniques. If sleep problems persist beyond 3 weeks, consult a doctor to rule out sleep disorders."
+  },
+  {
+    "Patient": "What are signs of an allergic reaction?",
+    "Doctor": "Mild allergic reactions include hives, itching, runny nose, and watery eyes. Moderate reactions may include swelling, stomach cramps, or vomiting. A severe reaction (anaphylaxis) causes throat swelling, difficulty breathing, rapid heartbeat, and can be life-threatening. Anaphylaxis requires immediate emergency treatment with epinephrine."
+  },
+  {
+    "Patient": "How often should I get a blood test?",
+    "Doctor": "For healthy adults, a general blood panel (CBC, metabolic panel, lipid profile) is recommended every 1-2 years. Frequency increases with age or chronic conditions. Fasting blood glucose should be checked every 3 years after age 45. Consult your doctor for a personalized screening schedule based on your medical history and risk factors."
+  },
+  {
+    "Patient": "I have a persistent headache and fever for 3 days.",
+    "Doctor": "A persistent headache with fever lasting more than 2 days may suggest an infection such as influenza, sinusitis, or in rare cases meningitis. Please seek medical attention promptly, especially if you also have neck stiffness or sensitivity to light."
+  },
+  {
+    "Patient": "What are the symptoms of type 2 diabetes?",
+    "Doctor": "Common symptoms of type 2 diabetes include increased thirst, frequent urination, unexplained fatigue, blurred vision, slow-healing wounds, and tingling in hands or feet. Many people have no symptoms early on. A fasting blood glucose test is needed for diagnosis."
+  },
+  {
+    "Patient": "How do I treat a mild burn at home?",
+    "Doctor": "For a mild (first-degree) burn: cool the area under running cold water for 10-20 minutes. Do not use ice. Apply aloe vera gel or a soothing lotion. Cover with a sterile non-stick bandage. Seek medical attention if the burn covers a large area or involves the face, hands, or joints."
+  },
+  {
+    "Patient": "My child has diarrhea and is not eating.",
+    "Doctor": "Diarrhea in children requires careful hydration management. Use an oral rehydration solution (ORS). Offer small, frequent amounts of liquid. Gradually reintroduce bland foods like rice, bananas, and toast. Consult a doctor if diarrhea persists beyond 48 hours, if there is blood in the stool, or signs of dehydration appear."
+  },
+  {
+    "Patient": "What is hypertension and how is it managed?",
+    "Doctor": "Hypertension (high blood pressure) is a chronic condition where blood pressure consistently exceeds 130/80 mmHg. Management includes lifestyle changes (reduced salt intake, regular exercise, healthy diet, smoking cessation) and medication when needed (e.g., ACE inhibitors, calcium channel blockers). Regular monitoring is essential."
+  },
+  {
+    "Patient": "I feel chest pain when I exercise.",
+    "Doctor": "Exercise-induced chest pain can indicate several conditions, ranging from musculoskeletal issues to more serious cardiac causes such as angina. This symptom should never be ignored. Please consult a cardiologist for an ECG and stress test. Stop exercising if pain occurs and seek emergency care if pain is severe or radiates to the arm or jaw."
+  },
+  {
+    "Patient": "What is the difference between a cold and the flu?",
+    "Doctor": "Colds typically develop gradually with mild symptoms: runny nose, sore throat, and sneezing. The flu comes on suddenly with more severe symptoms: high fever (38-40°C), body aches, fatigue, and headache. Both are caused by viruses. Flu can lead to serious complications in vulnerable populations; annual vaccination is recommended."
+  },
+  {
+    "Patient": "How can I improve my sleep quality?",
+    "Doctor": "To improve sleep quality: maintain a consistent sleep schedule, keep your bedroom dark and cool (18-20°C), avoid screens 1 hour before bed, limit caffeine after 2 PM, avoid alcohol before sleep, and manage stress through relaxation techniques. If sleep problems persist beyond 3 weeks, consult a doctor to rule out sleep disorders."
+  },
+  {
+    "Patient": "What are signs of an allergic reaction?",
+    "Doctor": "Mild allergic reactions include hives, itching, runny nose, and watery eyes. Moderate reactions may include swelling, stomach cramps, or vomiting. A severe reaction (anaphylaxis) causes throat swelling, difficulty breathing, rapid heartbeat, and can be life-threatening. Anaphylaxis requires immediate emergency treatment with epinephrine."
+  },
+  {
+    "Patient": "How often should I get a blood test?",
+    "Doctor": "For healthy adults, a general blood panel (CBC, metabolic panel, lipid profile) is recommended every 1-2 years. Frequency increases with age or chronic conditions. Fasting blood glucose should be checked every 3 years after age 45. Consult your doctor for a personalized screening schedule based on your medical history and risk factors."
+  },
+  {
+    "Patient": "I have a persistent headache and fever for 3 days.",
+    "Doctor": "A persistent headache with fever lasting more than 2 days may suggest an infection such as influenza, sinusitis, or in rare cases meningitis. Please seek medical attention promptly, especially if you also have neck stiffness or sensitivity to light."
+  },
+  {
+    "Patient": "What are the symptoms of type 2 diabetes?",
+    "Doctor": "Common symptoms of type 2 diabetes include increased thirst, frequent urination, unexplained fatigue, blurred vision, slow-healing wounds, and tingling in hands or feet. Many people have no symptoms early on. A fasting blood glucose test is needed for diagnosis."
+  },
+  {
+    "Patient": "How do I treat a mild burn at home?",
+    "Doctor": "For a mild (first-degree) burn: cool the area under running cold water for 10-20 minutes. Do not use ice. Apply aloe vera gel or a soothing lotion. Cover with a sterile non-stick bandage. Seek medical attention if the burn covers a large area or involves the face, hands, or joints."
+  },
+  {
+    "Patient": "My child has diarrhea and is not eating.",
+    "Doctor": "Diarrhea in children requires careful hydration management. Use an oral rehydration solution (ORS). Offer small, frequent amounts of liquid. Gradually reintroduce bland foods like rice, bananas, and toast. Consult a doctor if diarrhea persists beyond 48 hours, if there is blood in the stool, or signs of dehydration appear."
+  },
+  {
+    "Patient": "What is hypertension and how is it managed?",
+    "Doctor": "Hypertension (high blood pressure) is a chronic condition where blood pressure consistently exceeds 130/80 mmHg. Management includes lifestyle changes (reduced salt intake, regular exercise, healthy diet, smoking cessation) and medication when needed (e.g., ACE inhibitors, calcium channel blockers). Regular monitoring is essential."
+  },
+  {
+    "Patient": "I feel chest pain when I exercise.",
+    "Doctor": "Exercise-induced chest pain can indicate several conditions, ranging from musculoskeletal issues to more serious cardiac causes such as angina. This symptom should never be ignored. Please consult a cardiologist for an ECG and stress test. Stop exercising if pain occurs and seek emergency care if pain is severe or radiates to the arm or jaw."
+  },
+  {
+    "Patient": "What is the difference between a cold and the flu?",
+    "Doctor": "Colds typically develop gradually with mild symptoms: runny nose, sore throat, and sneezing. The flu comes on suddenly with more severe symptoms: high fever (38-40°C), body aches, fatigue, and headache. Both are caused by viruses. Flu can lead to serious complications in vulnerable populations; annual vaccination is recommended."
+  },
+  {
+    "Patient": "How can I improve my sleep quality?",
+    "Doctor": "To improve sleep quality: maintain a consistent sleep schedule, keep your bedroom dark and cool (18-20°C), avoid screens 1 hour before bed, limit caffeine after 2 PM, avoid alcohol before sleep, and manage stress through relaxation techniques. If sleep problems persist beyond 3 weeks, consult a doctor to rule out sleep disorders."
+  },
+  {
+    "Patient": "What are signs of an allergic reaction?",
+    "Doctor": "Mild allergic reactions include hives, itching, runny nose, and watery eyes. Moderate reactions may include swelling, stomach cramps, or vomiting. A severe reaction (anaphylaxis) causes throat swelling, difficulty breathing, rapid heartbeat, and can be life-threatening. Anaphylaxis requires immediate emergency treatment with epinephrine."
+  },
+  {
+    "Patient": "How often should I get a blood test?",
+    "Doctor": "For healthy adults, a general blood panel (CBC, metabolic panel, lipid profile) is recommended every 1-2 years. Frequency increases with age or chronic conditions. Fasting blood glucose should be checked every 3 years after age 45. Consult your doctor for a personalized screening schedule based on your medical history and risk factors."
+  },
+  {
+    "Patient": "I have a persistent headache and fever for 3 days.",
+    "Doctor": "A persistent headache with fever lasting more than 2 days may suggest an infection such as influenza, sinusitis, or in rare cases meningitis. Please seek medical attention promptly, especially if you also have neck stiffness or sensitivity to light."
+  },
+  {
+    "Patient": "What are the symptoms of type 2 diabetes?",
+    "Doctor": "Common symptoms of type 2 diabetes include increased thirst, frequent urination, unexplained fatigue, blurred vision, slow-healing wounds, and tingling in hands or feet. Many people have no symptoms early on. A fasting blood glucose test is needed for diagnosis."
+  },
+  {
+    "Patient": "How do I treat a mild burn at home?",
+    "Doctor": "For a mild (first-degree) burn: cool the area under running cold water for 10-20 minutes. Do not use ice. Apply aloe vera gel or a soothing lotion. Cover with a sterile non-stick bandage. Seek medical attention if the burn covers a large area or involves the face, hands, or joints."
+  },
+  {
+    "Patient": "My child has diarrhea and is not eating.",
+    "Doctor": "Diarrhea in children requires careful hydration management. Use an oral rehydration solution (ORS). Offer small, frequent amounts of liquid. Gradually reintroduce bland foods like rice, bananas, and toast. Consult a doctor if diarrhea persists beyond 48 hours, if there is blood in the stool, or signs of dehydration appear."
+  },
+  {
+    "Patient": "What is hypertension and how is it managed?",
+    "Doctor": "Hypertension (high blood pressure) is a chronic condition where blood pressure consistently exceeds 130/80 mmHg. Management includes lifestyle changes (reduced salt intake, regular exercise, healthy diet, smoking cessation) and medication when needed (e.g., ACE inhibitors, calcium channel blockers). Regular monitoring is essential."
+  },
+  {
+    "Patient": "I feel chest pain when I exercise.",
+    "Doctor": "Exercise-induced chest pain can indicate several conditions, ranging from musculoskeletal issues to more serious cardiac causes such as angina. This symptom should never be ignored. Please consult a cardiologist for an ECG and stress test. Stop exercising if pain occurs and seek emergency care if pain is severe or radiates to the arm or jaw."
+  },
+  {
+    "Patient": "What is the difference between a cold and the flu?",
+    "Doctor": "Colds typically develop gradually with mild symptoms: runny nose, sore throat, and sneezing. The flu comes on suddenly with more severe symptoms: high fever (38-40°C), body aches, fatigue, and headache. Both are caused by viruses. Flu can lead to serious complications in vulnerable populations; annual vaccination is recommended."
+  },
+  {
+    "Patient": "How can I improve my sleep quality?",
+    "Doctor": "To improve sleep quality: maintain a consistent sleep schedule, keep your bedroom dark and cool (18-20°C), avoid screens 1 hour before bed, limit caffeine after 2 PM, avoid alcohol before sleep, and manage stress through relaxation techniques. If sleep problems persist beyond 3 weeks, consult a doctor to rule out sleep disorders."
+  },
+  {
+    "Patient": "What are signs of an allergic reaction?",
+    "Doctor": "Mild allergic reactions include hives, itching, runny nose, and watery eyes. Moderate reactions may include swelling, stomach cramps, or vomiting. A severe reaction (anaphylaxis) causes throat swelling, difficulty breathing, rapid heartbeat, and can be life-threatening. Anaphylaxis requires immediate emergency treatment with epinephrine."
+  },
+  {
+    "Patient": "How often should I get a blood test?",
+    "Doctor": "For healthy adults, a general blood panel (CBC, metabolic panel, lipid profile) is recommended every 1-2 years. Frequency increases with age or chronic conditions. Fasting blood glucose should be checked every 3 years after age 45. Consult your doctor for a personalized screening schedule based on your medical history and risk factors."
+  },
+  {
+    "Patient": "I have a persistent headache and fever for 3 days.",
+    "Doctor": "A persistent headache with fever lasting more than 2 days may suggest an infection such as influenza, sinusitis, or in rare cases meningitis. Please seek medical attention promptly, especially if you also have neck stiffness or sensitivity to light."
+  },
+  {
+    "Patient": "What are the symptoms of type 2 diabetes?",
+    "Doctor": "Common symptoms of type 2 diabetes include increased thirst, frequent urination, unexplained fatigue, blurred vision, slow-healing wounds, and tingling in hands or feet. Many people have no symptoms early on. A fasting blood glucose test is needed for diagnosis."
+  },
+  {
+    "Patient": "How do I treat a mild burn at home?",
+    "Doctor": "For a mild (first-degree) burn: cool the area under running cold water for 10-20 minutes. Do not use ice. Apply aloe vera gel or a soothing lotion. Cover with a sterile non-stick bandage. Seek medical attention if the burn covers a large area or involves the face, hands, or joints."
+  },
+  {
+    "Patient": "My child has diarrhea and is not eating.",
+    "Doctor": "Diarrhea in children requires careful hydration management. Use an oral rehydration solution (ORS). Offer small, frequent amounts of liquid. Gradually reintroduce bland foods like rice, bananas, and toast. Consult a doctor if diarrhea persists beyond 48 hours, if there is blood in the stool, or signs of dehydration appear."
+  },
+  {
+    "Patient": "What is hypertension and how is it managed?",
+    "Doctor": "Hypertension (high blood pressure) is a chronic condition where blood pressure consistently exceeds 130/80 mmHg. Management includes lifestyle changes (reduced salt intake, regular exercise, healthy diet, smoking cessation) and medication when needed (e.g., ACE inhibitors, calcium channel blockers). Regular monitoring is essential."
+  },
+  {
+    "Patient": "I feel chest pain when I exercise.",
+    "Doctor": "Exercise-induced chest pain can indicate several conditions, ranging from musculoskeletal issues to more serious cardiac causes such as angina. This symptom should never be ignored. Please consult a cardiologist for an ECG and stress test. Stop exercising if pain occurs and seek emergency care if pain is severe or radiates to the arm or jaw."
+  },
+  {
+    "Patient": "What is the difference between a cold and the flu?",
+    "Doctor": "Colds typically develop gradually with mild symptoms: runny nose, sore throat, and sneezing. The flu comes on suddenly with more severe symptoms: high fever (38-40°C), body aches, fatigue, and headache. Both are caused by viruses. Flu can lead to serious complications in vulnerable populations; annual vaccination is recommended."
+  },
+  {
+    "Patient": "How can I improve my sleep quality?",
+    "Doctor": "To improve sleep quality: maintain a consistent sleep schedule, keep your bedroom dark and cool (18-20°C), avoid screens 1 hour before bed, limit caffeine after 2 PM, avoid alcohol before sleep, and manage stress through relaxation techniques. If sleep problems persist beyond 3 weeks, consult a doctor to rule out sleep disorders."
+  },
+  {
+    "Patient": "What are signs of an allergic reaction?",
+    "Doctor": "Mild allergic reactions include hives, itching, runny nose, and watery eyes. Moderate reactions may include swelling, stomach cramps, or vomiting. A severe reaction (anaphylaxis) causes throat swelling, difficulty breathing, rapid heartbeat, and can be life-threatening. Anaphylaxis requires immediate emergency treatment with epinephrine."
+  },
+  {
+    "Patient": "How often should I get a blood test?",
+    "Doctor": "For healthy adults, a general blood panel (CBC, metabolic panel, lipid profile) is recommended every 1-2 years. Frequency increases with age or chronic conditions. Fasting blood glucose should be checked every 3 years after age 45. Consult your doctor for a personalized screening schedule based on your medical history and risk factors."
+  },
+  {
+    "Patient": "I have a persistent headache and fever for 3 days.",
+    "Doctor": "A persistent headache with fever lasting more than 2 days may suggest an infection such as influenza, sinusitis, or in rare cases meningitis. Please seek medical attention promptly, especially if you also have neck stiffness or sensitivity to light."
+  },
+  {
+    "Patient": "What are the symptoms of type 2 diabetes?",
+    "Doctor": "Common symptoms of type 2 diabetes include increased thirst, frequent urination, unexplained fatigue, blurred vision, slow-healing wounds, and tingling in hands or feet. Many people have no symptoms early on. A fasting blood glucose test is needed for diagnosis."
+  },
+  {
+    "Patient": "How do I treat a mild burn at home?",
+    "Doctor": "For a mild (first-degree) burn: cool the area under running cold water for 10-20 minutes. Do not use ice. Apply aloe vera gel or a soothing lotion. Cover with a sterile non-stick bandage. Seek medical attention if the burn covers a large area or involves the face, hands, or joints."
+  },
+  {
+    "Patient": "My child has diarrhea and is not eating.",
+    "Doctor": "Diarrhea in children requires careful hydration management. Use an oral rehydration solution (ORS). Offer small, frequent amounts of liquid. Gradually reintroduce bland foods like rice, bananas, and toast. Consult a doctor if diarrhea persists beyond 48 hours, if there is blood in the stool, or signs of dehydration appear."
+  },
+  {
+    "Patient": "What is hypertension and how is it managed?",
+    "Doctor": "Hypertension (high blood pressure) is a chronic condition where blood pressure consistently exceeds 130/80 mmHg. Management includes lifestyle changes (reduced salt intake, regular exercise, healthy diet, smoking cessation) and medication when needed (e.g., ACE inhibitors, calcium channel blockers). Regular monitoring is essential."
+  },
+  {
+    "Patient": "I feel chest pain when I exercise.",
+    "Doctor": "Exercise-induced chest pain can indicate several conditions, ranging from musculoskeletal issues to more serious cardiac causes such as angina. This symptom should never be ignored. Please consult a cardiologist for an ECG and stress test. Stop exercising if pain occurs and seek emergency care if pain is severe or radiates to the arm or jaw."
+  },
+  {
+    "Patient": "What is the difference between a cold and the flu?",
+    "Doctor": "Colds typically develop gradually with mild symptoms: runny nose, sore throat, and sneezing. The flu comes on suddenly with more severe symptoms: high fever (38-40°C), body aches, fatigue, and headache. Both are caused by viruses. Flu can lead to serious complications in vulnerable populations; annual vaccination is recommended."
+  },
+  {
+    "Patient": "How can I improve my sleep quality?",
+    "Doctor": "To improve sleep quality: maintain a consistent sleep schedule, keep your bedroom dark and cool (18-20°C), avoid screens 1 hour before bed, limit caffeine after 2 PM, avoid alcohol before sleep, and manage stress through relaxation techniques. If sleep problems persist beyond 3 weeks, consult a doctor to rule out sleep disorders."
+  },
+  {
+    "Patient": "What are signs of an allergic reaction?",
+    "Doctor": "Mild allergic reactions include hives, itching, runny nose, and watery eyes. Moderate reactions may include swelling, stomach cramps, or vomiting. A severe reaction (anaphylaxis) causes throat swelling, difficulty breathing, rapid heartbeat, and can be life-threatening. Anaphylaxis requires immediate emergency treatment with epinephrine."
+  },
+  {
+    "Patient": "How often should I get a blood test?",
+    "Doctor": "For healthy adults, a general blood panel (CBC, metabolic panel, lipid profile) is recommended every 1-2 years. Frequency increases with age or chronic conditions. Fasting blood glucose should be checked every 3 years after age 45. Consult your doctor for a personalized screening schedule based on your medical history and risk factors."
+  },
+  {
+    "Patient": "I have a persistent headache and fever for 3 days.",
+    "Doctor": "A persistent headache with fever lasting more than 2 days may suggest an infection such as influenza, sinusitis, or in rare cases meningitis. Please seek medical attention promptly, especially if you also have neck stiffness or sensitivity to light."
+  },
+  {
+    "Patient": "What are the symptoms of type 2 diabetes?",
+    "Doctor": "Common symptoms of type 2 diabetes include increased thirst, frequent urination, unexplained fatigue, blurred vision, slow-healing wounds, and tingling in hands or feet. Many people have no symptoms early on. A fasting blood glucose test is needed for diagnosis."
+  },
+  {
+    "Patient": "How do I treat a mild burn at home?",
+    "Doctor": "For a mild (first-degree) burn: cool the area under running cold water for 10-20 minutes. Do not use ice. Apply aloe vera gel or a soothing lotion. Cover with a sterile non-stick bandage. Seek medical attention if the burn covers a large area or involves the face, hands, or joints."
+  },
+  {
+    "Patient": "My child has diarrhea and is not eating.",
+    "Doctor": "Diarrhea in children requires careful hydration management. Use an oral rehydration solution (ORS). Offer small, frequent amounts of liquid. Gradually reintroduce bland foods like rice, bananas, and toast. Consult a doctor if diarrhea persists beyond 48 hours, if there is blood in the stool, or signs of dehydration appear."
+  },
+  {
+    "Patient": "What is hypertension and how is it managed?",
+    "Doctor": "Hypertension (high blood pressure) is a chronic condition where blood pressure consistently exceeds 130/80 mmHg. Management includes lifestyle changes (reduced salt intake, regular exercise, healthy diet, smoking cessation) and medication when needed (e.g., ACE inhibitors, calcium channel blockers). Regular monitoring is essential."
+  },
+  {
+    "Patient": "I feel chest pain when I exercise.",
+    "Doctor": "Exercise-induced chest pain can indicate several conditions, ranging from musculoskeletal issues to more serious cardiac causes such as angina. This symptom should never be ignored. Please consult a cardiologist for an ECG and stress test. Stop exercising if pain occurs and seek emergency care if pain is severe or radiates to the arm or jaw."
+  },
+  {
+    "Patient": "What is the difference between a cold and the flu?",
+    "Doctor": "Colds typically develop gradually with mild symptoms: runny nose, sore throat, and sneezing. The flu comes on suddenly with more severe symptoms: high fever (38-40°C), body aches, fatigue, and headache. Both are caused by viruses. Flu can lead to serious complications in vulnerable populations; annual vaccination is recommended."
+  },
+  {
+    "Patient": "How can I improve my sleep quality?",
+    "Doctor": "To improve sleep quality: maintain a consistent sleep schedule, keep your bedroom dark and cool (18-20°C), avoid screens 1 hour before bed, limit caffeine after 2 PM, avoid alcohol before sleep, and manage stress through relaxation techniques. If sleep problems persist beyond 3 weeks, consult a doctor to rule out sleep disorders."
+  },
+  {
+    "Patient": "What are signs of an allergic reaction?",
+    "Doctor": "Mild allergic reactions include hives, itching, runny nose, and watery eyes. Moderate reactions may include swelling, stomach cramps, or vomiting. A severe reaction (anaphylaxis) causes throat swelling, difficulty breathing, rapid heartbeat, and can be life-threatening. Anaphylaxis requires immediate emergency treatment with epinephrine."
+  },
+  {
+    "Patient": "How often should I get a blood test?",
+    "Doctor": "For healthy adults, a general blood panel (CBC, metabolic panel, lipid profile) is recommended every 1-2 years. Frequency increases with age or chronic conditions. Fasting blood glucose should be checked every 3 years after age 45. Consult your doctor for a personalized screening schedule based on your medical history and risk factors."
+  },
+  {
+    "Patient": "I have a persistent headache and fever for 3 days.",
+    "Doctor": "A persistent headache with fever lasting more than 2 days may suggest an infection such as influenza, sinusitis, or in rare cases meningitis. Please seek medical attention promptly, especially if you also have neck stiffness or sensitivity to light."
+  },
+  {
+    "Patient": "What are the symptoms of type 2 diabetes?",
+    "Doctor": "Common symptoms of type 2 diabetes include increased thirst, frequent urination, unexplained fatigue, blurred vision, slow-healing wounds, and tingling in hands or feet. Many people have no symptoms early on. A fasting blood glucose test is needed for diagnosis."
+  },
+  {
+    "Patient": "How do I treat a mild burn at home?",
+    "Doctor": "For a mild (first-degree) burn: cool the area under running cold water for 10-20 minutes. Do not use ice. Apply aloe vera gel or a soothing lotion. Cover with a sterile non-stick bandage. Seek medical attention if the burn covers a large area or involves the face, hands, or joints."
+  },
+  {
+    "Patient": "My child has diarrhea and is not eating.",
+    "Doctor": "Diarrhea in children requires careful hydration management. Use an oral rehydration solution (ORS). Offer small, frequent amounts of liquid. Gradually reintroduce bland foods like rice, bananas, and toast. Consult a doctor if diarrhea persists beyond 48 hours, if there is blood in the stool, or signs of dehydration appear."
+  },
+  {
+    "Patient": "What is hypertension and how is it managed?",
+    "Doctor": "Hypertension (high blood pressure) is a chronic condition where blood pressure consistently exceeds 130/80 mmHg. Management includes lifestyle changes (reduced salt intake, regular exercise, healthy diet, smoking cessation) and medication when needed (e.g., ACE inhibitors, calcium channel blockers). Regular monitoring is essential."
+  },
+  {
+    "Patient": "I feel chest pain when I exercise.",
+    "Doctor": "Exercise-induced chest pain can indicate several conditions, ranging from musculoskeletal issues to more serious cardiac causes such as angina. This symptom should never be ignored. Please consult a cardiologist for an ECG and stress test. Stop exercising if pain occurs and seek emergency care if pain is severe or radiates to the arm or jaw."
+  },
+  {
+    "Patient": "What is the difference between a cold and the flu?",
+    "Doctor": "Colds typically develop gradually with mild symptoms: runny nose, sore throat, and sneezing. The flu comes on suddenly with more severe symptoms: high fever (38-40°C), body aches, fatigue, and headache. Both are caused by viruses. Flu can lead to serious complications in vulnerable populations; annual vaccination is recommended."
+  },
+  {
+    "Patient": "How can I improve my sleep quality?",
+    "Doctor": "To improve sleep quality: maintain a consistent sleep schedule, keep your bedroom dark and cool (18-20°C), avoid screens 1 hour before bed, limit caffeine after 2 PM, avoid alcohol before sleep, and manage stress through relaxation techniques. If sleep problems persist beyond 3 weeks, consult a doctor to rule out sleep disorders."
+  },
+  {
+    "Patient": "What are signs of an allergic reaction?",
+    "Doctor": "Mild allergic reactions include hives, itching, runny nose, and watery eyes. Moderate reactions may include swelling, stomach cramps, or vomiting. A severe reaction (anaphylaxis) causes throat swelling, difficulty breathing, rapid heartbeat, and can be life-threatening. Anaphylaxis requires immediate emergency treatment with epinephrine."
+  },
+  {
+    "Patient": "How often should I get a blood test?",
+    "Doctor": "For healthy adults, a general blood panel (CBC, metabolic panel, lipid profile) is recommended every 1-2 years. Frequency increases with age or chronic conditions. Fasting blood glucose should be checked every 3 years after age 45. Consult your doctor for a personalized screening schedule based on your medical history and risk factors."
+  },
+  {
+    "Patient": "I have a persistent headache and fever for 3 days.",
+    "Doctor": "A persistent headache with fever lasting more than 2 days may suggest an infection such as influenza, sinusitis, or in rare cases meningitis. Please seek medical attention promptly, especially if you also have neck stiffness or sensitivity to light."
+  },
+  {
+    "Patient": "What are the symptoms of type 2 diabetes?",
+    "Doctor": "Common symptoms of type 2 diabetes include increased thirst, frequent urination, unexplained fatigue, blurred vision, slow-healing wounds, and tingling in hands or feet. Many people have no symptoms early on. A fasting blood glucose test is needed for diagnosis."
+  },
+  {
+    "Patient": "How do I treat a mild burn at home?",
+    "Doctor": "For a mild (first-degree) burn: cool the area under running cold water for 10-20 minutes. Do not use ice. Apply aloe vera gel or a soothing lotion. Cover with a sterile non-stick bandage. Seek medical attention if the burn covers a large area or involves the face, hands, or joints."
+  },
+  {
+    "Patient": "My child has diarrhea and is not eating.",
+    "Doctor": "Diarrhea in children requires careful hydration management. Use an oral rehydration solution (ORS). Offer small, frequent amounts of liquid. Gradually reintroduce bland foods like rice, bananas, and toast. Consult a doctor if diarrhea persists beyond 48 hours, if there is blood in the stool, or signs of dehydration appear."
+  },
+  {
+    "Patient": "What is hypertension and how is it managed?",
+    "Doctor": "Hypertension (high blood pressure) is a chronic condition where blood pressure consistently exceeds 130/80 mmHg. Management includes lifestyle changes (reduced salt intake, regular exercise, healthy diet, smoking cessation) and medication when needed (e.g., ACE inhibitors, calcium channel blockers). Regular monitoring is essential."
+  },
+  {
+    "Patient": "I feel chest pain when I exercise.",
+    "Doctor": "Exercise-induced chest pain can indicate several conditions, ranging from musculoskeletal issues to more serious cardiac causes such as angina. This symptom should never be ignored. Please consult a cardiologist for an ECG and stress test. Stop exercising if pain occurs and seek emergency care if pain is severe or radiates to the arm or jaw."
+  },
+  {
+    "Patient": "What is the difference between a cold and the flu?",
+    "Doctor": "Colds typically develop gradually with mild symptoms: runny nose, sore throat, and sneezing. The flu comes on suddenly with more severe symptoms: high fever (38-40°C), body aches, fatigue, and headache. Both are caused by viruses. Flu can lead to serious complications in vulnerable populations; annual vaccination is recommended."
+  },
+  {
+    "Patient": "How can I improve my sleep quality?",
+    "Doctor": "To improve sleep quality: maintain a consistent sleep schedule, keep your bedroom dark and cool (18-20°C), avoid screens 1 hour before bed, limit caffeine after 2 PM, avoid alcohol before sleep, and manage stress through relaxation techniques. If sleep problems persist beyond 3 weeks, consult a doctor to rule out sleep disorders."
+  },
+  {
+    "Patient": "What are signs of an allergic reaction?",
+    "Doctor": "Mild allergic reactions include hives, itching, runny nose, and watery eyes. Moderate reactions may include swelling, stomach cramps, or vomiting. A severe reaction (anaphylaxis) causes throat swelling, difficulty breathing, rapid heartbeat, and can be life-threatening. Anaphylaxis requires immediate emergency treatment with epinephrine."
+  },
+  {
+    "Patient": "How often should I get a blood test?",
+    "Doctor": "For healthy adults, a general blood panel (CBC, metabolic panel, lipid profile) is recommended every 1-2 years. Frequency increases with age or chronic conditions. Fasting blood glucose should be checked every 3 years after age 45. Consult your doctor for a personalized screening schedule based on your medical history and risk factors."
+  },
+  {
+    "Patient": "I have a persistent headache and fever for 3 days.",
+    "Doctor": "A persistent headache with fever lasting more than 2 days may suggest an infection such as influenza, sinusitis, or in rare cases meningitis. Please seek medical attention promptly, especially if you also have neck stiffness or sensitivity to light."
+  },
+  {
+    "Patient": "What are the symptoms of type 2 diabetes?",
+    "Doctor": "Common symptoms of type 2 diabetes include increased thirst, frequent urination, unexplained fatigue, blurred vision, slow-healing wounds, and tingling in hands or feet. Many people have no symptoms early on. A fasting blood glucose test is needed for diagnosis."
+  },
+  {
+    "Patient": "How do I treat a mild burn at home?",
+    "Doctor": "For a mild (first-degree) burn: cool the area under running cold water for 10-20 minutes. Do not use ice. Apply aloe vera gel or a soothing lotion. Cover with a sterile non-stick bandage. Seek medical attention if the burn covers a large area or involves the face, hands, or joints."
+  },
+  {
+    "Patient": "My child has diarrhea and is not eating.",
+    "Doctor": "Diarrhea in children requires careful hydration management. Use an oral rehydration solution (ORS). Offer small, frequent amounts of liquid. Gradually reintroduce bland foods like rice, bananas, and toast. Consult a doctor if diarrhea persists beyond 48 hours, if there is blood in the stool, or signs of dehydration appear."
+  },
+  {
+    "Patient": "What is hypertension and how is it managed?",
+    "Doctor": "Hypertension (high blood pressure) is a chronic condition where blood pressure consistently exceeds 130/80 mmHg. Management includes lifestyle changes (reduced salt intake, regular exercise, healthy diet, smoking cessation) and medication when needed (e.g., ACE inhibitors, calcium channel blockers). Regular monitoring is essential."
+  },
+  {
+    "Patient": "I feel chest pain when I exercise.",
+    "Doctor": "Exercise-induced chest pain can indicate several conditions, ranging from musculoskeletal issues to more serious cardiac causes such as angina. This symptom should never be ignored. Please consult a cardiologist for an ECG and stress test. Stop exercising if pain occurs and seek emergency care if pain is severe or radiates to the arm or jaw."
+  },
+  {
+    "Patient": "What is the difference between a cold and the flu?",
+    "Doctor": "Colds typically develop gradually with mild symptoms: runny nose, sore throat, and sneezing. The flu comes on suddenly with more severe symptoms: high fever (38-40°C), body aches, fatigue, and headache. Both are caused by viruses. Flu can lead to serious complications in vulnerable populations; annual vaccination is recommended."
+  },
+  {
+    "Patient": "How can I improve my sleep quality?",
+    "Doctor": "To improve sleep quality: maintain a consistent sleep schedule, keep your bedroom dark and cool (18-20°C), avoid screens 1 hour before bed, limit caffeine after 2 PM, avoid alcohol before sleep, and manage stress through relaxation techniques. If sleep problems persist beyond 3 weeks, consult a doctor to rule out sleep disorders."
+  },
+  {
+    "Patient": "What are signs of an allergic reaction?",
+    "Doctor": "Mild allergic reactions include hives, itching, runny nose, and watery eyes. Moderate reactions may include swelling, stomach cramps, or vomiting. A severe reaction (anaphylaxis) causes throat swelling, difficulty breathing, rapid heartbeat, and can be life-threatening. Anaphylaxis requires immediate emergency treatment with epinephrine."
+  },
+  {
+    "Patient": "How often should I get a blood test?",
+    "Doctor": "For healthy adults, a general blood panel (CBC, metabolic panel, lipid profile) is recommended every 1-2 years. Frequency increases with age or chronic conditions. Fasting blood glucose should be checked every 3 years after age 45. Consult your doctor for a personalized screening schedule based on your medical history and risk factors."
+  },
+  {
+    "Patient": "I have a persistent headache and fever for 3 days.",
+    "Doctor": "A persistent headache with fever lasting more than 2 days may suggest an infection such as influenza, sinusitis, or in rare cases meningitis. Please seek medical attention promptly, especially if you also have neck stiffness or sensitivity to light."
+  },
+  {
+    "Patient": "What are the symptoms of type 2 diabetes?",
+    "Doctor": "Common symptoms of type 2 diabetes include increased thirst, frequent urination, unexplained fatigue, blurred vision, slow-healing wounds, and tingling in hands or feet. Many people have no symptoms early on. A fasting blood glucose test is needed for diagnosis."
+  },
+  {
+    "Patient": "How do I treat a mild burn at home?",
+    "Doctor": "For a mild (first-degree) burn: cool the area under running cold water for 10-20 minutes. Do not use ice. Apply aloe vera gel or a soothing lotion. Cover with a sterile non-stick bandage. Seek medical attention if the burn covers a large area or involves the face, hands, or joints."
+  },
+  {
+    "Patient": "My child has diarrhea and is not eating.",
+    "Doctor": "Diarrhea in children requires careful hydration management. Use an oral rehydration solution (ORS). Offer small, frequent amounts of liquid. Gradually reintroduce bland foods like rice, bananas, and toast. Consult a doctor if diarrhea persists beyond 48 hours, if there is blood in the stool, or signs of dehydration appear."
+  },
+  {
+    "Patient": "What is hypertension and how is it managed?",
+    "Doctor": "Hypertension (high blood pressure) is a chronic condition where blood pressure consistently exceeds 130/80 mmHg. Management includes lifestyle changes (reduced salt intake, regular exercise, healthy diet, smoking cessation) and medication when needed (e.g., ACE inhibitors, calcium channel blockers). Regular monitoring is essential."
+  },
+  {
+    "Patient": "I feel chest pain when I exercise.",
+    "Doctor": "Exercise-induced chest pain can indicate several conditions, ranging from musculoskeletal issues to more serious cardiac causes such as angina. This symptom should never be ignored. Please consult a cardiologist for an ECG and stress test. Stop exercising if pain occurs and seek emergency care if pain is severe or radiates to the arm or jaw."
+  },
+  {
+    "Patient": "What is the difference between a cold and the flu?",
+    "Doctor": "Colds typically develop gradually with mild symptoms: runny nose, sore throat, and sneezing. The flu comes on suddenly with more severe symptoms: high fever (38-40°C), body aches, fatigue, and headache. Both are caused by viruses. Flu can lead to serious complications in vulnerable populations; annual vaccination is recommended."
+  },
+  {
+    "Patient": "How can I improve my sleep quality?",
+    "Doctor": "To improve sleep quality: maintain a consistent sleep schedule, keep your bedroom dark and cool (18-20°C), avoid screens 1 hour before bed, limit caffeine after 2 PM, avoid alcohol before sleep, and manage stress through relaxation techniques. If sleep problems persist beyond 3 weeks, consult a doctor to rule out sleep disorders."
+  },
+  {
+    "Patient": "What are signs of an allergic reaction?",
+    "Doctor": "Mild allergic reactions include hives, itching, runny nose, and watery eyes. Moderate reactions may include swelling, stomach cramps, or vomiting. A severe reaction (anaphylaxis) causes throat swelling, difficulty breathing, rapid heartbeat, and can be life-threatening. Anaphylaxis requires immediate emergency treatment with epinephrine."
+  },
+  {
+    "Patient": "How often should I get a blood test?",
+    "Doctor": "For healthy adults, a general blood panel (CBC, metabolic panel, lipid profile) is recommended every 1-2 years. Frequency increases with age or chronic conditions. Fasting blood glucose should be checked every 3 years after age 45. Consult your doctor for a personalized screening schedule based on your medical history and risk factors."
+  },
+  {
+    "Patient": "I have a persistent headache and fever for 3 days.",
+    "Doctor": "A persistent headache with fever lasting more than 2 days may suggest an infection such as influenza, sinusitis, or in rare cases meningitis. Please seek medical attention promptly, especially if you also have neck stiffness or sensitivity to light."
+  },
+  {
+    "Patient": "What are the symptoms of type 2 diabetes?",
+    "Doctor": "Common symptoms of type 2 diabetes include increased thirst, frequent urination, unexplained fatigue, blurred vision, slow-healing wounds, and tingling in hands or feet. Many people have no symptoms early on. A fasting blood glucose test is needed for diagnosis."
+  },
+  {
+    "Patient": "How do I treat a mild burn at home?",
+    "Doctor": "For a mild (first-degree) burn: cool the area under running cold water for 10-20 minutes. Do not use ice. Apply aloe vera gel or a soothing lotion. Cover with a sterile non-stick bandage. Seek medical attention if the burn covers a large area or involves the face, hands, or joints."
+  },
+  {
+    "Patient": "My child has diarrhea and is not eating.",
+    "Doctor": "Diarrhea in children requires careful hydration management. Use an oral rehydration solution (ORS). Offer small, frequent amounts of liquid. Gradually reintroduce bland foods like rice, bananas, and toast. Consult a doctor if diarrhea persists beyond 48 hours, if there is blood in the stool, or signs of dehydration appear."
+  },
+  {
+    "Patient": "What is hypertension and how is it managed?",
+    "Doctor": "Hypertension (high blood pressure) is a chronic condition where blood pressure consistently exceeds 130/80 mmHg. Management includes lifestyle changes (reduced salt intake, regular exercise, healthy diet, smoking cessation) and medication when needed (e.g., ACE inhibitors, calcium channel blockers). Regular monitoring is essential."
+  },
+  {
+    "Patient": "I feel chest pain when I exercise.",
+    "Doctor": "Exercise-induced chest pain can indicate several conditions, ranging from musculoskeletal issues to more serious cardiac causes such as angina. This symptom should never be ignored. Please consult a cardiologist for an ECG and stress test. Stop exercising if pain occurs and seek emergency care if pain is severe or radiates to the arm or jaw."
+  },
+  {
+    "Patient": "What is the difference between a cold and the flu?",
+    "Doctor": "Colds typically develop gradually with mild symptoms: runny nose, sore throat, and sneezing. The flu comes on suddenly with more severe symptoms: high fever (38-40°C), body aches, fatigue, and headache. Both are caused by viruses. Flu can lead to serious complications in vulnerable populations; annual vaccination is recommended."
+  },
+  {
+    "Patient": "How can I improve my sleep quality?",
+    "Doctor": "To improve sleep quality: maintain a consistent sleep schedule, keep your bedroom dark and cool (18-20°C), avoid screens 1 hour before bed, limit caffeine after 2 PM, avoid alcohol before sleep, and manage stress through relaxation techniques. If sleep problems persist beyond 3 weeks, consult a doctor to rule out sleep disorders."
+  },
+  {
+    "Patient": "What are signs of an allergic reaction?",
+    "Doctor": "Mild allergic reactions include hives, itching, runny nose, and watery eyes. Moderate reactions may include swelling, stomach cramps, or vomiting. A severe reaction (anaphylaxis) causes throat swelling, difficulty breathing, rapid heartbeat, and can be life-threatening. Anaphylaxis requires immediate emergency treatment with epinephrine."
+  },
+  {
+    "Patient": "How often should I get a blood test?",
+    "Doctor": "For healthy adults, a general blood panel (CBC, metabolic panel, lipid profile) is recommended every 1-2 years. Frequency increases with age or chronic conditions. Fasting blood glucose should be checked every 3 years after age 45. Consult your doctor for a personalized screening schedule based on your medical history and risk factors."
+  }
+]
