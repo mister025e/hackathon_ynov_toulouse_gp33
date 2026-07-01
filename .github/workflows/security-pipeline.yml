@@ -2,9 +2,10 @@ name: CI Security Pipeline
 
 on:
   push:
-    branches: [main, master]
+    branches: [main, master,dev,infra]
   pull_request:
-    branches: [main, master]
+    branches: [main, master,dev,infra]
+
 
 env:
   REGISTRY: ghcr.io
